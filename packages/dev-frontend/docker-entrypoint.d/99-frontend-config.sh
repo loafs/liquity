@@ -7,6 +7,8 @@ echo_config() {
   echo '}'
 }
 
-echo_config > /usr/share/nginx/html/config.json
+touch ./public/config.json
+
+echo_config > ./public/config.json
 
 exit 0
